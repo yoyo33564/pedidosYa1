@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+.telefono,
+.telefono-app {
+    width: 390px;
+    min-height: 100vh;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+}
+
+.acceso {
+    background: #eeeeee;
+}
+
+.acceso .telefono {
+    min-height: 100vh;
+}
+
+.imagen-acceso {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+.imagen-acceso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-acceso {
+    padding: 25px;
+}
+
+.contenido-acceso h1 {
+    color: #e91e63;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contenido-acceso h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.boton-google,
+.boton-facebook {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #cccccc;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.boton-facebook {
+    background: #1877f2;
+    color: white;
+    border: none;
+}
+
+.o {
+    text-align: center;
+    color: #888;
+    margin: 18px 0;
+}
+
+.contenido-acceso input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0 12px;
+    margin-bottom: 12px;
+}
+
+.olvidaste {
+    display: block;
+    color: #e91e63;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.boton-entrar {
+    display: block;
+    background: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.crear {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.crear a {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.terminos {
+    text-align: center;
+    color: #999;
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 25px;
+}
+
+.encabezado {
+    background: #e91e63;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.direccion {
+    font-size: 12px;
+}
+
+.direccion strong {
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.inicio {
+    padding: 20px 18px 80px;
+}
+
+.buscador {
+    background: #f1f1f1;
+    border-radius: 7px;
+    padding: 15px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.inicio h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.categoria p {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.seccion {
+    margin-top: 30px;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-seccion h2 {
+    margin-bottom: 12px;
+}
+
+.titulo-seccion a {
+    color: #e91e63;
+    font-size: 11px;
+}
+
+.promocion {
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #e91e63;
+    color: white;
+}
+
+.promocion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+}
+
+.promocion div {
+    position: absolute;
+    left: 15px;
+    top: 35px;
+}
+
+.promocion h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.promocion p {
+    font-size: 12px;
+}
+
+.productos {
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.producto {
+    min-width: 125px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.producto img {
+    width: 125px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    font-size: 13px;
+    padding: 8px 8px 3px;
+}
+
+.producto p {
+    font-size: 11px;
+    color: #e91e63;
+    padding: 0 8px 10px;
+}
+
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    width: 390px;
+    height: 65px;
+    background: white;
+    border-top: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-inferior a {
+    font-size: 12px;
+    color: #555;
+}
+
+.menu-inferior a:first-child {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.restaurante-header {
+    background: #e91e63;
+    color: white;
+    padding: 18px;
+}
+
+.restaurante-header h1 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.volver {
+    font-size: 12px;
+}
+
+.foto-restaurante {
+    width: 100%;
+    height: 170px;
+}
+
+.foto-restaurante img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurante {
+    padding: 20px 18px 80px;
+}
+
+.restaurante h1 {
+    font-size: 25px;
+}
+
+.tipo {
+    color: #777;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.tiempo {
+    color: #e91e63;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.categorias-menu {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin: 25px 0;
+    padding-bottom: 5px;
+}
+
+.categorias-menu a {
+    background: #f4f4f4;
+    padding: 9px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.menu-seccion {
+    margin-top: 25px;
+}
+
+.menu-seccion h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.producto-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.producto-menu div {
+    flex: 1;
+}
+
+.producto-menu h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.producto-menu p {
+    color: #777;
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.producto-menu strong {
+    color: #e91e63;
+    font-size: 14px;
+}
+
+.producto-menu img {
+    width: 95px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.boton-pedido {
+    position: fixed;
+    bottom: 75px;
+    width: 350px;
+    margin-left: 20px;
+    background: #e91e63;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.producto-header {
+    height: 55px;
+    padding: 20px;
+}
+
+.producto-header a {
+    color: #555;
+    font-size: 13px;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 250px;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detalle-producto {
+    padding: 22px 20px 100px;
+}
+
+.detalle-producto h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.precio {
+    color: #e91e63;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.detalle-producto hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 22px;
+}
+
+.detalle-producto h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.seleccion {
+    color: #888;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+.opcion span {
+    flex: 1;
+}
+
+.opcion strong {
+    color: #555;
+    font-size: 12px;
+}
+
+.opcion input {
+    width: 18px;
+    height: 18px;
+}
+
+.cantidad {
+    margin-top: 25px;
+}
+
+.contador {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    width: 55px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.total-producto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+    font-size: 17px;
+}
+
+.total-producto strong {
+    color: #e91e63;
+}
+
+.agregar {
+    display: block;
+    background: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+
+    .telefono,
+    .telefono-app {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    }
+
+}
